@@ -1,6 +1,7 @@
 from django.http.response import HttpResponse
 from django.shortcuts import render
 from rest_framework.relations import ManyRelatedField
+from rest_framework.views import APIView
 
 # Create your views here.
 from .models import Portfolio
@@ -10,7 +11,6 @@ from rest_framework.renderers import JSONRenderer
 
 
 #this function was based only on 1 instance
-
 def index(request,pk):
     hm = Portfolio.objects.get(id=pk)   #here we make the object class of our model instance and get gives us the id of the 1st models object
     print("==================================>",hm)

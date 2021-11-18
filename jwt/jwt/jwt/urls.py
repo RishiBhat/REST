@@ -14,9 +14,9 @@ urlpatterns = [
 
     path('admin/', admin.site.urls),
     path('',include(router.urls)),
-   # path('gettoken/',TokenObtainPairView.as_view(), name='token_obtain_pair'),
-   # path('refreshtoken/',TokenRefreshView.as_view(), name='token_obtain_pair'),
-   # path('verifytoken/', TokenVerifyView.as_view(), name='token_obtain_pair'),
+    #path('gettoken/',TokenObtainPairView.as_view(), name='token_obtain_pair'),
+    #path('refreshtoken/',TokenRefreshView.as_view(), name='token_obtain_pair'),
+    #path('verifytoken/', TokenVerifyView.as_view(), name='token_obtain_pair'),
     #path('auth/',include('rest_framework.urls', namespace='rest_framework')), #This is for the browsable api
     #path('gettoken/',CustomAuthToken.as_view()), #this is the api endpoint exposed  #if  user sends requests in gettoken it will forward a custom token.....
 
